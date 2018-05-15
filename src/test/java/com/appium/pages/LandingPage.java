@@ -14,13 +14,13 @@ public class LandingPage extends CommonAppiumMethods {
     public LandingPage(AppiumDriver<MobileElement> driver) {
         super(driver);
         PageFactory.initElements(new AppiumFieldDecorator(driver), landingPageObjects);
-        waitForElementToLoad(landingPageObjects.LoginButton);
+        waitForElementToLoad(landingPageObjects.CountriesList);
     }
 
-    public LoginPage clickLoginButton(){
+    public Toolbar clickCountry(){
         logger.info("LandingPage click Login Button");
-        landingPageObjects.LoginButton.click();
-        return new LoginPage(driver);
+        landingPageObjects.CountryText.click();
+        return new Toolbar(driver);
     }
 
 

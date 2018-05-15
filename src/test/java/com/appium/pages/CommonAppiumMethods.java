@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 //TODO - Add take screenshot method
 //TODO - use Java 8 interface methods
 
@@ -24,13 +25,17 @@ public class CommonAppiumMethods {
     }
 
     void waitForElementToLoad(WebElement id) {
+        driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS) ;
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.elementToBeClickable(id));
+        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
     }
 
     void waitForElementToDisAppear(String id) {
-        WebDriverWait wait = new WebDriverWait(driver, 15);
+        driver.manage().timeouts().implicitlyWait(0,TimeUnit.SECONDS) ;
+        WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id(id)));
+        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
     }
 
     WebElement waitAndGetElement(WebElement arg) {

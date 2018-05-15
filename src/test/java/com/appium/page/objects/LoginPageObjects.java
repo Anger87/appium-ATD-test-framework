@@ -5,17 +5,16 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 
 public class LoginPageObjects {
 
+    @AndroidFindBy(id = "de.autodoc.gmbh:id/llContent")
+    public MobileElement Content;
 
-    @AndroidFindBy(id = "com.snapchat.android:id/login_form")
-    public MobileElement LoginForm;
+    @AndroidFindBy(id = "de.autodoc.gmbh:id/etEmail")
+    public MobileElement Email;
 
-    @AndroidFindBy(id = "com.snapchat.android:id/username_or_email_field")
-    public MobileElement UserName;
+    @AndroidFindBy(id = "de.autodoc.gmbh:id/btnNext")
+    public MobileElement BtnNext;
 
-    @AndroidFindBy(id = "com.snapchat.android:id/password_field")
+    @AndroidFindBy(id = "\tde.autodoc.gmbh:id/etPassword")
     public MobileElement Password;
-
-    @AndroidFindBy(id = "com.snapchat.android:id/registration_nav_container")
-    public MobileElement LogInButton;
 
 }

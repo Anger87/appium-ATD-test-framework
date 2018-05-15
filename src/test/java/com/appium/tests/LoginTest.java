@@ -9,8 +9,14 @@ public class LoginTest extends BaseTest {
     @Test
     public void LoginLogOut() {
         softAssert = new SoftAssert();
+        toolbar = landingPage.clickCountry();
+        menuPage= toolbar.clickMenu();
+        loginPage=menuPage.clickloginButton();
+        loginPage.logIn(userCredentials.getUserName(),userCredentials.getPassWord());
+
+        /*
         loginPage = landingPage.clickLoginButton();
-        neonHeaderPage = loginPage.logIn(userCredentials.getUserName(),userCredentials.getPassWord());
+        neonHeaderPage = loginPage
 
         profilePage = neonHeaderPage.clickProfileButton();
         logger.info("Check User name on Profile Page");
@@ -30,7 +36,7 @@ public class LoginTest extends BaseTest {
         landingPage = popUpPage.clickYesButton();
         logger.info("Check Landing page opened");
         softAssert.assertNotEquals(landingPage, null);
-
+*/
         softAssert.assertAll();
     }
 

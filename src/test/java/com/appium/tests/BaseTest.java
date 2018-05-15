@@ -1,7 +1,5 @@
 package com.appium.tests;
 
-//import com.appium.config.ReadProperties;
-
 import com.appium.config.ReadProperties;
 import com.appium.config.UserCredentials;
 import com.appium.pages.*;
@@ -21,11 +19,10 @@ public class BaseTest {
     SoftAssert softAssert ;
     protected AppiumDriver driver;
     protected LandingPage landingPage;
+    protected Toolbar toolbar;
     protected LoginPage loginPage;
-    protected NeonHeaderPage neonHeaderPage;
-    protected PopUpPage popUpPage;
-    protected ProfilePage profilePage;
-    protected SettingsPage settingsPage;
+    protected MenuPage menuPage;
+
 
     public UserCredentials userCredentials;
     ReadProperties user = new ReadProperties();
