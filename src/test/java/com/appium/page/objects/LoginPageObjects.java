@@ -14,7 +14,10 @@ public class LoginPageObjects {
     @AndroidFindBy(id = "de.autodoc.gmbh:id/btnNext")
     public MobileElement BtnNext;
 
-    @AndroidFindBy(id = "\tde.autodoc.gmbh:id/etPassword")
+    @AndroidFindBy(id = "de.autodoc.gmbh:id/tilPassword")
     public MobileElement Password;
 
+
+    @AndroidFindBy(id = "de.autodoc.gmbh:id/btnLogin")
+    public MobileElement Btnlogin;
 }

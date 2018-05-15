@@ -21,13 +21,13 @@ public class LoginPage extends CommonAppiumMethods {
         logger.info("LoginPage Entering Email: " + username);
         loginPageObjects.Email.setValue(username);
 
-        logger.info("LoginPage click Next Button");
-        loginPageObjects.BtnNext.click();
+//        logger.info("LoginPage click Next Button");
+//        loginPageObjects.BtnNext.click();
         logger.info("LoginPage Entering Password: " + password);
         loginPageObjects.Password.setValue(password);
 
         logger.info("LoginPage click Login Button");
-        loginPageObjects.BtnNext.click();
+        loginPageObjects.Btnlogin.click();
 
         return new CatalogPage(driver);
     }
