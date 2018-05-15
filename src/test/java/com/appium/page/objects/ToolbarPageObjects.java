@@ -14,5 +14,10 @@ public class ToolbarPageObjects {
     @AndroidFindBy(id = "de.autodoc.gmbh:id/action_cart")
     public MobileElement Cart;
 
+    @AndroidFindBy(id = "de.autodoc.gmbh:id/action_edit")
+    public MobileElement Edit;
+
+    @AndroidFindBy(id = "de.autodoc.gmbh:id/action_save")
+    public MobileElement Save;
 
 }

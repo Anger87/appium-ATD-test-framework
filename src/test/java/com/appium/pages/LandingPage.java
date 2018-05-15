@@ -17,9 +17,9 @@ public class LandingPage extends CommonAppiumMethods {
         waitForElementToLoad(landingPageObjects.CountriesList);
     }
 
-    public Toolbar clickCountry(){
-        logger.info("LandingPage click Login Button");
-        landingPageObjects.CountryText.click();
+    public Toolbar clickAustria(){
+        logger.info("LandingPage click Austria in the list");
+        landingPageObjects.AustriaText.click();
         return new Toolbar(driver);
     }
 

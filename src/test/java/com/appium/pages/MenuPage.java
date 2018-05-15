@@ -19,7 +19,7 @@ public class MenuPage extends CommonAppiumMethods {
     }
 
     public LoginPage clickloginButton(){
-        logger.info("LandingPage click Login Button");
+        logger.info("Menu click Login Button");
         menuPageObjects.BtnLogin.click();
         return new LoginPage(driver);
     }

@@ -14,15 +14,13 @@ public class LoginPage extends CommonAppiumMethods {
     public LoginPage(AppiumDriver<MobileElement> driver) {
         super(driver);
         PageFactory.initElements(new AppiumFieldDecorator(driver), loginPageObjects);
-        waitForElementToLoad(loginPageObjects.Content);
+        waitForElementToLoad(loginPageObjects.Email);
     }
 
     public CatalogPage  logIn(String username, String password) {
         logger.info("LoginPage Entering Email: " + username);
         loginPageObjects.Email.setValue(username);
 
-//        logger.info("LoginPage click Next Button");
-//        loginPageObjects.BtnNext.click();
         logger.info("LoginPage Entering Password: " + password);
         loginPageObjects.Password.setValue(password);
 

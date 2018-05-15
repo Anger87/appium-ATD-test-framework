@@ -14,7 +14,7 @@ import org.testng.asserts.SoftAssert;
 import java.lang.reflect.Method;
 
 public class BaseTest {
-//TODO - add debug test class runner
+
     public Logger logger = Logger.getLogger(BaseTest.class);
     SoftAssert softAssert ;
     protected AppiumDriver driver;
@@ -22,6 +22,9 @@ public class BaseTest {
     protected Toolbar toolbar;
     protected LoginPage loginPage;
     protected MenuPage menuPage;
+    protected CatalogPage catalogPage;
+    protected VehiclesPage vehiclesPage;
+    protected MyVehiclesPage myVehiclesPage;
 
 
     public UserCredentials userCredentials;
@@ -49,7 +52,7 @@ public class BaseTest {
         logger.info("\n\n:::\nStarting test: " + testName + "." + className + "." + methodName);
     }
 
-    @AfterSuite
+    @AfterMethod
     public void shutDown() {
         driver.resetApp();
     }

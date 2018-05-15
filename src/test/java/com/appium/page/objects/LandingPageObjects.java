@@ -13,7 +13,7 @@ public class LandingPageObjects {
     @AndroidFindBy(id = "de.autodoc.gmbh:id/rvCountriesList")
     public MobileElement CountriesList;
 
-    @AndroidFindBy(id = "de.autodoc.gmbh:id/textView1")
-    public MobileElement CountryText;
+    @AndroidFindBy(xpath = "//android.widget.CheckedTextView[@text='Austria']")
+    public MobileElement AustriaText;
 
 }

@@ -23,6 +23,10 @@ public class Toolbar extends CommonAppiumMethods {
         return new MenuPage(driver);
     }
 
+    public void clickEditButton(){
+        logger.info("Toolbar click Edit Button");
+        toolbarPageObjects.Edit.click();
+    }
 
 
 }

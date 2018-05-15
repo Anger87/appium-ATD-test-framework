@@ -11,14 +11,13 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.URL;
 
 public class AppiumDriverBuilder {
-//TODO add iOS driver build
     AndroidDriver driver;
     ReadProperties capProperties = new ReadProperties();
 
     public AppiumDriver build() throws Exception {
 
 //        capProperties.initProperty(System.getProperty("capabilityPropperties"));
-        capProperties.initProperty("deviceCapability.properties");
+        capProperties.initProperty("emulatorCapability.properties");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, capProperties.getPropValue("platformVersion"));
