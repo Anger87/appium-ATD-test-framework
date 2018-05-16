@@ -1,0 +1,114 @@
+D:\Projects\autodoc>mvn test -DcapabilityPropperties=emulatorCapability.properties
+[INFO] Scanning for projects...
+[WARNING]
+[WARNING] Some problems were encountered while building the effective model for com.appium.pagepattern:autodoc:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: log4j:log4j:jar -> duplicate declaration of version 1.2.17 @ line 43, column 21
+[WARNING]
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING]
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING]
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building autodoc 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ autodoc ---
+[WARNING] Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory D:\Projects\autodoc\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ autodoc ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ autodoc ---
+[WARNING] Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 4 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ autodoc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ autodoc ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+[TestNGContentHandler] [WARN] It is strongly recommended to add "<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >" at the top of your file, otherwise TestNG may fail or n
+ot work as expected.
+...
+... TestNG 6.14.2 by C?dric Beust (cedric@beust.com)
+...
+
+ьр  16, 2018 9:22:06 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+2018-05-16 09:22:07 INFO  BaseTest:beforeMethod:52 -
+
+:::
+Starting test: Login Logout.AddCarTest.AddEditDeleteCar
+2018-05-16 09:22:07 INFO  LandingPage:clickAustria:21 - LandingPage click Austria in the list
+2018-05-16 09:22:10 INFO  CatalogPage:clickAddCarButton:26 - CatalogPpage wait bunner to disapear
+2018-05-16 09:22:17 INFO  CatalogPage:clickAddCarButton:29 - CatalogPpage click AddCar button
+2018-05-16 09:22:18 INFO  VehiclesPage:clickCarMaker:26 - VehiclesPage click on Car maker row
+2018-05-16 09:22:18 INFO  BaseTest:AddEditDeleteCar:51 - Select Car mark
+2018-05-16 09:22:18 INFO  VehiclesPage:clickByText:21 - AddToMyViclesPage click on specific text: BMW
+2018-05-16 09:22:20 INFO  BaseTest:AddEditDeleteCar:53 - Select Car Series
+2018-05-16 09:22:20 INFO  VehiclesPage:clickByText:21 - AddToMyViclesPage click on specific text: 02 Convertible (E10) (12.1967 - 10.1975)
+2018-05-16 09:22:21 INFO  BaseTest:AddEditDeleteCar:55 - Select Petrol
+2018-05-16 09:22:21 INFO  VehiclesPage:clickByText:21 - AddToMyViclesPage click on specific text: 2002 (74 KW / 100 PS) (05.1971 - 07.1975)
+2018-05-16 09:22:23 INFO  VehiclesPage:clickOnAddToMyVehiclesButton:36 - VehiclesPage click on AddToMyVehicles Button
+2018-05-16 09:22:27 INFO  Toolbar:clickEditButton:27 - Toolbar click Edit Button
+2018-05-16 09:22:28 INFO  MyVehiclesPage:clickEditCarButton:36 - MyVehiclesPage click Edit Button
+2018-05-16 09:22:29 INFO  VehiclesPage:clickCarmodel:31 - VehiclesPage click on Car model row
+2018-05-16 09:22:30 INFO  BaseTest:AddEditDeleteCar:63 - VehiclesPage change car model
+2018-05-16 09:22:30 INFO  VehiclesPage:clickByText:21 - AddToMyViclesPage click on specific text: 1 Hatchback (E87) (02.2003 - 01.2013)
+2018-05-16 09:22:32 INFO  BaseTest:AddEditDeleteCar:65 - VehiclesPage change car petrol
+2018-05-16 09:22:32 INFO  VehiclesPage:clickByText:21 - AddToMyViclesPage click on specific text: 116d 2.0 (85 KW / 116 PS) (12.2008 - 09.2012)
+2018-05-16 09:22:33 INFO  VehiclesPage:clickSaveCarButton:42 - VehiclesPage click on AddToMyVehicles Button
+2018-05-16 09:22:35 INFO  BaseTest:AddEditDeleteCar:69 - MyVehiclePage check that car title and description were changed
+2018-05-16 09:22:35 INFO  MyVehiclesPage:getTitleText:21 - MyVehiclesPage get Title text
+2018-05-16 09:22:35 INFO  MyVehiclesPage:getDescriptionText:26 - MyVehiclesPage get Description text
+2018-05-16 09:22:35 INFO  Toolbar:clickEditButton:27 - Toolbar click Edit Button
+2018-05-16 09:22:35 INFO  MyVehiclesPage:clickDeleteCarButton:31 - MyVehiclesPage click Delete Button
+2018-05-16 09:22:40 INFO  BaseTest:beforeMethod:52 -
+
+:::
+Starting test: Login Logout.AddCarTest.LoginAddDeleteCar
+2018-05-16 09:22:40 INFO  LandingPage:clickAustria:21 - LandingPage click Austria in the list
+2018-05-16 09:22:43 INFO  Toolbar:clickMenu:21 - Toolbar click Menu Button
+2018-05-16 09:22:45 INFO  MenuPage:clickloginButton:22 - Menu click Login Button
+2018-05-16 09:22:46 INFO  LoginPage:logIn:21 - LoginPage Entering Email: konstyantinnataluha@gmail.com
+2018-05-16 09:22:48 INFO  LoginPage:logIn:24 - LoginPage Entering Password: test123
+2018-05-16 09:22:49 INFO  LoginPage:logIn:27 - LoginPage click Login Button
+2018-05-16 09:22:53 INFO  CatalogPage:clickAddCarButton:26 - CatalogPpage wait bunner to disapear
+2018-05-16 09:22:53 INFO  CatalogPage:clickAddCarButton:29 - CatalogPpage click AddCar button
+2018-05-16 09:22:54 INFO  VehiclesPage:clickCarMaker:26 - VehiclesPage click on Car maker row
+2018-05-16 09:22:55 INFO  BaseTest:LoginAddDeleteCar:19 - Select Car mark
+2018-05-16 09:22:55 INFO  VehiclesPage:clickByText:21 - AddToMyViclesPage click on specific text: BMW
+2018-05-16 09:22:56 INFO  BaseTest:LoginAddDeleteCar:21 - Select Car Series
+2018-05-16 09:22:56 INFO  VehiclesPage:clickByText:21 - AddToMyViclesPage click on specific text: 02 Convertible (E10) (12.1967 - 10.1975)
+2018-05-16 09:22:58 INFO  BaseTest:LoginAddDeleteCar:23 - Select Petrol
+2018-05-16 09:22:58 INFO  VehiclesPage:clickByText:21 - AddToMyViclesPage click on specific text: 2002 (74 KW / 100 PS) (05.1971 - 07.1975)
+2018-05-16 09:22:59 INFO  VehiclesPage:clickOnAddToMyVehiclesButton:36 - VehiclesPage click on AddToMyVehicles Button
+2018-05-16 09:23:02 INFO  BaseTest:LoginAddDeleteCar:27 - CatalogPage check car title and description
+2018-05-16 09:23:02 INFO  CatalogPage:getCarTitleText:35 - CatalogPpage get Car Title text
+2018-05-16 09:23:02 INFO  CatalogPage:getCarSerieasText:40 - CatalogPpage get Car Series text
+2018-05-16 09:23:04 INFO  BaseTest:LoginAddDeleteCar:32 - MyVehiclePage check car title and description
+2018-05-16 09:23:04 INFO  MyVehiclesPage:getTitleText:21 - MyVehiclesPage get Title text
+2018-05-16 09:23:04 INFO  MyVehiclesPage:getDescriptionText:26 - MyVehiclesPage get Description text
+2018-05-16 09:23:05 INFO  Toolbar:clickEditButton:27 - Toolbar click Edit Button
+2018-05-16 09:23:05 INFO  MyVehiclesPage:clickDeleteCarButton:31 - MyVehiclesPage click Delete Button
+2018-05-16 09:23:06 INFO  BaseTest:LoginAddDeleteCar:38 - MyVehiclePage check car was deleted
+2018-05-16 09:23:06 INFO  MyVehiclesPage:getTextMessage:41 - MyVehiclesPage get message that car was deleted
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 73.936 sec - in TestSuite
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:16 min
+[INFO] Finished at: 2018-05-16T09:23:11+03:00
+[INFO] Final Memory: 13M/309M
+[INFO] ------------------------------------------------------------------------

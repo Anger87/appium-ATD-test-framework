@@ -16,13 +16,12 @@ public class AppiumDriverBuilder {
 
     public AppiumDriver build() throws Exception {
 
-//        capProperties.initProperty(System.getProperty("capabilityPropperties"));
-        capProperties.initProperty("emulatorCapability.properties");
+        capProperties.initProperty(System.getProperty("capabilityPropperties"));
+//        capProperties.initProperty("emulatorCapability.properties");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, capProperties.getPropValue("platformVersion"));
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, capProperties.getPropValue("deviceName"));
-//        capabilities.setCapability(AndroidMobileCapabilityType.APP_WAIT_ACTIVITY, WAIT_ACTIVITIES);
         capabilities.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir") + capProperties.getPropValue("apk_path"));
         capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, capProperties.getPropValue("appPackage"));
         capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, capProperties.getPropValue("appActivity"));

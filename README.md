@@ -1,13 +1,7 @@
-# Automation for SnapChat mobile app (Java, TestNG, Selenium WebDriver, Appium)
+# Automation for Autodoc mobile app (Java, TestNG, Selenium WebDriver, Appium)
 
 Test assignment:
-
-Using Appium and Java: Automate the process of log in and log out from Snapchat mobile app on Android device with stock firmware (not-rooted)
-As a result, please provide:
-source code of your Java classes;
-compiled jar file;
-appium configuration file;
-
+Using Appium, Java and TestNG: Automate the process of add, edit, delete car on Autodoc mobile app on Android device
 Solution: 
 
 Tested on Xiaomi Redmi 4 with Android 6.0.
@@ -17,5 +11,5 @@ Also you should set emulator or device cabalilities files in \src\test\resources
 User credentials set in \src\test\resources\props\user.properties
 
 To run test from IDE, use testng.xml configuration file. 
-To run test from command line, use 'mvn test -DcapabilityPropperties=deviceCapability.properties' command.
-Check logs: mavenTestRunLog.txt, appium-server-logs.txt
+To run test from command line, use 'mvn test -DcapabilityPropperties=emulatorCapability.properties' command.
+Check logs: mavenTestRunLog.txt
